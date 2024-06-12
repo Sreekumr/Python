@@ -1,10 +1,4 @@
-
-def cube(num):
-    return num*num*num
-
-result= (cube(3))
-
-print(result)
-
-for letter in "Hello World":
-    print(letter)
+ if n < 0:
+        return "Factorial is not defined for negative numbers."
+    elif n == 0 or n == 1:
+        return 1
