@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Ensure items are stacked vertically */
+            justify-content: center;
+            align-items: center;
+            background-image: url('one.jpg'); /* Replace 'one.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em; /* Larger font size */
+            margin-bottom: 20px;
+            color: rgb(8, 97, 148);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="submit"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+
+        .register-link {
+            margin-top: 10px;
+        }
+
+        .register-link a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Euphoria</h1>
+    <div class="form-container">
+        <form action="login.py" method="get">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="e1">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="p1">
+            <input type="submit" value="Login">
+        </form>
+        <div class="register-link">
+            <p>Not registered yet? <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+</body>
+</html>
